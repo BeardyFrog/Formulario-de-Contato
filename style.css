@@ -1,0 +1,146 @@
+body {
+    font-family: Karla, sans-serif;
+    background-color: hsl(148, 38%, 91%);
+    color: hsl(186, 15%, 59%);
+    margin-top: 100px;
+    margin-bottom: 100px;   
+}
+
+input {
+    border-radius: 5px;
+    padding: 0;  
+    margin: 0;
+}
+
+textarea {
+    border-radius: 5px;
+    height: 1000px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 600px;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+#campoNome {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+#campoQuery  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+
+#queryTittle {
+    display: block;
+}
+
+#generalEnquiry, #supportRequest {
+    display: flex;
+    align-items: center;
+    border: 2px, solid, black;
+    border-radius: 5px;
+    height: 30px;
+    width: 290px;
+    justify-content: center; 
+    margin-bottom: 10px;
+}
+
+label {
+/* Deixa os labels em linhas separadas. */
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+ #email, #consent {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+}
+
+#first_name, #last_name {
+    margin-bottom: 15px;
+    width: 290px;
+    height: 30px;
+    padding: 0px;
+}
+
+textarea {
+   width:100%;
+   height: 100px ;
+}
+
+#campoConsent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Alinha verticalmente o checkbox e o label */
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#campoConsent input[type="checkbox"], input:checked {
+    width: 20px;
+    margin-right: 5px;
+    margin-left: 0;
+    transform: translateY(3px);
+    
+}
+
+#campoConsent input[type="checkbox"]:checked {
+    background-color: aquamarine;
+}
+
+#campoConsent label {
+    margin: 0;
+    white-space: nowrap;
+}
+
+button {
+    background-color:hsl(169, 82%, 27%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: hsl(169, 82%, 35%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+.loading {
+    width: 25px;
+    align-items: center;
+    /* Dara uma volta completa em 1 segundo, infinitamente, em velocidade linear. */
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}

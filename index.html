@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.google.com/specimen/Karla">
+    <link rel="icon" href="favicon-32x32.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact us</h1>
+        <form>
+          <div>
+                <div id="campoNome">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                </div>
+            <div id="campoEmail">
+                <label>Email Adress</label>
+                <input type="email" name="email" id="email">
+            </div>
+          
+            <label id="queryTittle">Query Type</label>
+                <div id="campoQuery">
+                <label id="generalEnquiry">
+                    <input type="radio" name="query" value="General Enquiry">General Enquiry
+                </label>
+                <label id="supportRequest">
+                    <input type="radio" name="query" value="Support Request">Support Request
+                </label>
+                </div>
+            <div id="campoMessage">
+                <label>Message</label>
+                <textarea row ="9" name="message" id="message"></textarea>
+            </div>
+            <div id="campoConsent">
+                <input type="checkbox" name="consent" id="consent">
+                <span class="checkmark"></span>
+                <label>I consent to being contact by the team.</label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        </form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
